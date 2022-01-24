@@ -48,7 +48,7 @@ include "topheader.php";
                     </tr></thead>
                     <tbody>
                       <?php 
-                        $result=mysqli_query($con,"select id_pesanan,user_id, f_name, email, kode_pos, total_amt, cardnumber from data_pesanan ")or die ("query 1 incorrect.....");
+                        $result=mysqli_query($con,"select id_pesanan, user_id, f_name, email, kode_pos, total_amt, cardnumber from data_pesanan ")or die ("query 1 incorrect.....");
 
                         while(list($id_pesanan,$user_id,$f_name,$email,$kodepos,$total_amt,$cardnumber)=mysqli_fetch_array($result))
                         {	

@@ -89,7 +89,7 @@ if(isset($_POST["getProduct"])){
 				echo "
 					<div class='alert alert-success'>
 						<a href='#' class='close' data-dismiss='alert' aria-label='close'></a>
-						<b>Barnag Di Simpan..!</b>
+						<b>Barang Di Simpan..!</b>
 					</div>
 				";
 			}

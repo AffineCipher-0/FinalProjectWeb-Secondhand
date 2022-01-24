@@ -52,7 +52,7 @@ include "topheader.php";
                 <div class="table-responsive ps">
                   <table class="table tablesorter " id="page1">
                     <thead class=" text-primary">
-                      <tr><th>Image</th><th>Name</th><th>Price</th><th>
+                      <tr><th>Image</th><th>Nama</th><th>Harga</th><th>
 	<a class=" btn btn-primary" href="addproduct.php">Tambah Baru</a></th></tr></thead>
                     <tbody>
                       <?php 

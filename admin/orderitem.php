@@ -50,9 +50,7 @@ include "topheader.php";
                         {	
                         echo "<tr><td>$id_pesanan</td><td>$id_barang_pesanan</td><td>$id_barang</td><td>$kapasitas</td>
 
-                        <td>
-                        <a class=' btn btn-danger' href='barangpesanan.php?id_pesanan=$id_pesanan&action=delete'>Delete</a>
-                        </td></tr>";
+                       ";
                         }
                         ?>
                     </tbody>

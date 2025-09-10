@@ -1,33 +1,104 @@
 # ProjectNoWhere
-home index.php 
+==================================
+📂 Struktur File & Keterkaitan
+==================================
+home/index.php
 store.php
 cart.php
-checkout
+checkout.php
 
-(keranjang.php) berada pada header.php dan checkout.php
-(shop.php) berada action.php, body.php, checkout_process.php, homeaction.php,register.php
-pembayaran.php berada pada action.php
-pembayaran_process.php berada pada checkout.php
-cookie list_barang berada pada login_form, login
-(pembayaran_success.php)
+📂 Keranjang
+- keranjang.php → dipakai di header.php, checkout.php
 
-Ketika login muncul 2021 berada pada login.php 
+📂 Shop
+- shop.php → dipakai di action.php, body.php, checkout_process.php, homeaction.php, register.php
 
+📂 Pembayaran
+- pembayaran.php → dipakai di action.php
+- pembayaran_process.php → dipakai di checkout.php
+- pembayaran_success.php
 
+📂 Login
+- login.php (ketika login muncul "2021")
+- login_form.php → cookie list_barang
+- login.php → cookie list_barang
 
-Pembahasan Fitur Halaman Utama
+==================================
+📂 Pembahasan Fitur Halaman Utama
+==================================
 - Login
 - Register
 - Pembayaran
-- Checkout/Keranjang
+- Checkout / Keranjang
 
-Pembahasa Fitur Halaman Admin
-- Menampilkan User List dan Categories List di dashboard
-- Add Users Mengisi/Menambahkan data user
-- Product List Menampilkan produk dan mengupdate produk
-- Order menampilakan pesanan dari pengguna
-- Add Product sama halnya dengan produk list menambahkan produk dan mengupdate
-- Manage User menambahkan user/mengedit user
+==================================
+📂 Pembahasan Fitur Halaman Admin
+==================================
+- Dashboard
+  • Menampilkan User List
+  • Menampilkan Categories List
 
-Testing YOLO Achievement 🐙
-echo "YOLO test run 🐙 $(date)" >> README.md
+- Add Users
+  • Mengisi / menambahkan data user
+
+- Product List
+  • Menampilkan produk
+  • Mengupdate produk
+
+- Order
+  • Menampilkan pesanan dari pengguna
+
+- Add Product
+  • Menambahkan produk
+  • Mengupdate produk (sama seperti Product List)
+
+- Manage User
+  • Menambahkan user
+  • Mengedit user
+
+                [ home/index.php ]
+                        |
+        --------------------------------
+        |                              |
+   [ store.php ]                 [ cart.php ]
+                                      |
+                                [ checkout.php ]
+                                      |
+                     ---------------------------------
+                     |                               |
+            [ keranjang.php ]                 [ pembayaran.php ]
+             (header.php,checkout.php)         (action.php)
+                     |                               |
+              [ shop.php ]                      [ pembayaran_process.php ]
+  (action.php, body.php, checkout_process,             |
+   homeaction.php, register.php)                [ pembayaran_success.php ]
+
+
+
+===============================
+          LOGIN
+===============================
+[ login_form.php ] ---- cookie list_barang
+[ login.php ] ---------- cookie list_barang
+          |
+       (menampilkan "2021" saat login)
+
+
+===============================
+          ADMIN
+===============================
+[ Dashboard ]
+   ├── User List
+   ├── Categories List
+[ Add Users ]
+   └── Tambah user
+[ Product List ]
+   ├── Tampilkan produk
+   └── Update produk
+[ Order ]
+   └── Lihat pesanan user
+[ Add Product ]
+   └── Tambah/update produk
+[ Manage User ]
+   └── Tambah/edit user
+

@@ -28,3 +28,5 @@ Pembahasa Fitur Halaman Admin
 - Order menampilakan pesanan dari pengguna
 - Add Product sama halnya dengan produk list menambahkan produk dan mengupdate
 - Manage User menambahkan user/mengedit user
+
+Testing YOLO Achievement 🐙

@@ -56,49 +56,6 @@ checkout.php
   • Menambahkan user
   • Mengedit user
 
-                [ home/index.php ]
-                        |
-        --------------------------------
-        |                              |
-   [ store.php ]                 [ cart.php ]
-                                      |
-                                [ checkout.php ]
-                                      |
-                     ---------------------------------
-                     |                               |
-            [ keranjang.php ]                 [ pembayaran.php ]
-             (header.php,checkout.php)         (action.php)
-                     |                               |
-              [ shop.php ]                      [ pembayaran_process.php ]
-  (action.php, body.php, checkout_process,             |
-   homeaction.php, register.php)                [ pembayaran_success.php ]
+<img width="366" height="557" alt="image" src="https://github.com/user-attachments/assets/77eb6d28-f903-470e-a814-730de45eb990" />
 
-
-
-===============================
-          LOGIN
-===============================
-[ login_form.php ] ---- cookie list_barang
-[ login.php ] ---------- cookie list_barang
-          |
-       (menampilkan "2021" saat login)
-
-
-===============================
-          ADMIN
-===============================
-[ Dashboard ]
-   ├── User List
-   ├── Categories List
-[ Add Users ]
-   └── Tambah user
-[ Product List ]
-   ├── Tampilkan produk
-   └── Update produk
-[ Order ]
-   └── Lihat pesanan user
-[ Add Product ]
-   └── Tambah/update produk
-[ Manage User ]
-   └── Tambah/edit user
 
